@@ -8,3 +8,7 @@
 .tp-margin {
   margin: 30px;
 }
+body {
+  color:black;
+  background-color:rgb(206, 130, 130);
+}
