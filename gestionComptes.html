@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml"href="images/madame-cantine.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Madame Cantine - Admin</title>
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <ul class="logo">
+                <li><img class="logo-mc" src="images/madame-cantine.svg" alt=""></li>
+            </ul>
+            <ul class="items-menu">
+                <div class="item-menu">
+                    <li class="items"><a href="#">Menus</a></li>
+                    <div class="sous-menu">
+                        <ul class="dropdown-links menus">
+                            <li><a class="link-down">Consulter</a></li>
+                            <li><a class="link-down">Ajouter</a></li>
+                            <li><a class="link-down">Modifier</a></li>
+                            <li><a class="link-down">Supprimer</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item-menu">
+                    <li class="items-2"><a href="#">Commandes</a></li>
+                    <div class="sous-menu-commandes">
+                        <ul class="dropdown-links commandes">
+                            <li><a class="link-down">Consulter</a></li>
+                            <li><a class="link-down">Ajouter</a></li>
+                            <li><a class="link-down">Modifier</a></li>
+                            <li><a class="link-down">Supprimer</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <li class="items"><a id="item-on" href="">Comptes</a></li>
+                <li class="items"><a id="log" href="">Déconnexion</a></li>
+                <li class="items-admin">Admin</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+
+            <!-- Card -->
+            <div class="card-item-admin">
+                <input class='search-admin' type="search" placeholder='recherchez un nom'>
+                <ul class='personne'>
+                    <li class='prenom'>Dumas Jean</li>
+                    <li class='numero'>020202</li>
+                    <li class='cagnotte'>13,03€</li>
+                    <li class="modif-btn"><a class='modif' href="">Modifier</a></li>
+                    <li class="modif-btn"><a class='suppr' href="">Supprimer</a></li>
+                </ul>
+                <ul class='personne'>
+                    <li class='prenom'>Collin Pauline</li>
+                    <li class='numero'>020202</li>
+                    <li class='cagnotte'>13,03€</li>
+                    <li class="modif-btn"><a class='modif' href="">Modifier</a></li>
+                    <li class="suppr-btn"><a class='suppr' href="">Supprimer</a></li>
+                </ul>
+                <ul class='personne'>
+                    <li class='prenom'>Vasseur Celine</li>
+                    <li class='numero'>020202</li>
+                    <li class='cagnotte'>13,03€</li>
+                    <li class="modif-btn"><a class='modif' href="">Modifier</a></li>
+                    <li class="suppr-btn"><a class='suppr' href="">Supprimer</a></li>
+                </ul>
+            </div>
+            <!-- End card -->
+
+    </main>
+    <footer id='créditer'>
+        <ul>
+            <li class="credit-btn"><a class='credit' href="">Créditer</a></li>
+        </ul>
+                
+    </footer>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

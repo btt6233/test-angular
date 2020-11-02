@@ -1,0 +1,457 @@
+@font-face {
+    font-family: Epilogue-Black;
+    src: url(./fonts/Epilogue-Black.ttf);
+  }
+@font-face {
+    font-family: Epilogue-BlackItalic;
+    src: url(./fonts/Epilogue-BlackItalic.ttf);
+  }
+@font-face {
+    font-family: Epilogue-Bold;
+    src: url(./fonts/Epilogue-Bold.ttf);
+  }
+@font-face {
+    font-family: Epilogue-Medium;
+    src: url(./fonts/Epilogue-Medium.ttf);
+  }
+@font-face {
+    font-family: Epilogue-Black;
+    src: url(./fonts/Epilogue-Black.ttf);
+  }
+
+  body {
+      margin: 0;
+  }
+
+.logo-mc {
+    width: 10em;
+    fill: #45BF87;
+}
+
+h1 {
+    margin-top : 10%;
+    font-family: Epilogue-Black;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 80%);
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: Epilogue-Bold;
+}
+
+.accueil {
+    background-color: transparent;
+}
+
+.items > a:hover, .items-2 > a:hover {
+    background-color: #45BF87;
+    color: white;
+    transition: ease-in 0.3s;
+}
+
+/* On vera ça plus tard ;) */
+
+/* .items > a:active, .items-2 > a:active {
+    background-color: #45BF87;
+    color: white;
+} */
+
+.items-menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 15em;
+
+}
+
+.items a, .items-2 a {
+    font-size: 0.8em;
+    padding: 1em 3em;
+    line-height: 2em;
+    border-radius: 2em;
+    box-shadow: 0px 0px 52px -7px rgba(0,0,0,0.25);
+}
+
+#log {
+    background-color:#FF9595;
+    color: white;
+}
+#log:hover {
+    background-color: #FAD0D0;
+    color: white;
+}
+
+#log2 {
+    background-color:#FF9595;
+    color: white;
+}
+#log2:hover {
+    background-color: #FAD0D0;
+    color: white;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    display: flex;
+    
+}
+
+.link-down  {
+    font-family: Epilogue-Bold;
+    line-height: 1.5em;
+    color: lightgrey;  
+}
+.link-down:hover {
+    font-family: Epilogue-Bold;
+    line-height: 1.5em;
+    cursor: pointer;
+    color: #45BF87; 
+}
+
+.sous-menu, .sous-menu-commandes {
+    position: absolute;
+    transition: ease-in 0.3s;
+    opacity: 0;
+    font-family: Epilogue-Bold;
+    line-height: 1.5em;
+    color: lightgrey;
+    background-color: white;
+    margin-top: 2em;
+    border-radius: 0.7em;
+    padding: 1em;
+    box-shadow: 0px 0px 52px -7px rgba(0,0,0,0.25);
+    z-index: 3000;
+}
+
+.sous-menu-commandes {
+    margin-left: 0.5em;
+}
+
+.sous-menu {
+    margin-left: -1em;
+}
+
+.dropdown-links {
+    padding-left: 1em;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* Card style !*/
+
+/* main > .container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-grow: 1;
+    
+} */
+
+h3 {
+    font-family: Epilogue-Bold;
+}
+
+p {
+    font-family: Epilogue-Medium;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10em;
+}
+
+.card-item {
+    margin: 3em;
+    width: 15em;
+    padding: 3em;
+    border-radius: 2em;
+    box-shadow: 0px 0px 52px -7px rgba(0,0,0,0.25);
+}
+
+/* Formulaire d'inscription */
+
+#modal {
+    width: 100%;
+    height: 100vh;
+    background-color: #45BF87;
+    position: fixed;
+    z-index: -10;
+    opacity: 0;
+    transition: ease-in 0.8s;
+}
+
+#modal-form {
+    margin-top: -100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: ease 1s;
+}
+
+#form-card { 
+    position: fixed;
+    margin: 3em;
+    width: 30em;
+}
+.modal-form {
+    margin-top: 5em;
+    text-align: center;
+    align-content: center;
+    margin:0 auto;
+    width: 100%; 
+    padding: 70px;
+
+}
+
+#form-card {
+    position: absolute;
+    display: none;
+    margin:0 auto;
+    max-width: 700px;
+    width: 100%; 
+    text-align: center;
+    padding: 3em;
+    background-color: white;
+    border-radius: 2em;
+    
+    box-shadow: 0px 0px 52px -7px rgba(0,0,0,0.25);
+}
+
+input, select {
+    height: 3em;
+    border-radius: 3em;
+    border: none;
+    box-shadow: 0px 0px 52px -12px rgba(0,0,0,0.25);
+}
+
+button {
+    padding: 1em;
+    width: 10%;
+}
+
+.form-group {
+    display: table-row;
+    margin-top: 70px;
+}
+
+.tabCredit {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-family: Epilogue-Bold;
+}
+
+input[type="submit"]{
+    padding: 1em 2em;
+    background-color: #45BF87;
+    color: white;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+input::placeholder{
+    padding: 1em 2em;
+    font-family: Epilogue-Bold;
+    color: lightgray;
+}
+
+select {
+    padding: 1em 2em;
+    appearance: none;
+    background-color: gainsboro;
+}
+
+.form-card > h3 {
+    color:#45BF87;
+    font-size: 2.5em;
+    margin:0 auto;
+    max-width: 700px;
+    width: 100%; 
+    text-align: center;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+td, th
+{
+    border: 1px solid black;
+}
+
+/* Le footer !! */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    height:5em;
+    background-color: #45BF87;
+    width: 100%;
+    bottom: 0; left: 0; right: 0;
+}
+
+footer a, footer #log{
+    background-color: transparent;
+    color: white;
+}
+
+.f-items:hover{
+    text-decoration: underline;
+}
+
+.items-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* ADMIN */
+/* Gestion des comptes */
+
+.items-admin{
+    color: #45BF87;
+    font-weight:bold;
+    font-size: 1.2em;
+    font-family: Epilogue-Medium;
+}
+
+#item-on{
+    background-color: #45BF87;
+    color: white;
+}
+
+.search-admin{
+    height: 3em;
+    width:30em;
+    border-radius: 3em;
+    box-shadow: 0px 0px 52px -12px rgba(0,0,0,0.7);
+}
+.card-item-admin{
+    margin: 10em 3em 3em 3em;
+    width: 50em;
+
+}
+/* ajout baptiste */
+
+
+.modifbout{
+    display: flex;
+    justify-content: right;
+    position: right;
+}
+
+.card-item2 {
+    margin-left: 0;
+    width: 40%;
+
+    padding: 3em;
+    border-radius: 2em;
+    box-shadow: 0px 0px 52px -7px rgba(0,0,0,0.25);
+}
+
+.card-item-admin .prenom, .card-item-admin .numero{
+    font-family: Epilogue-Bold;
+    font-size:1.2em;
+}
+.card-item-admin .cagnotte{
+    font-family: Epilogue-Bold;
+    font-size:1.2em;
+    color:#FF9595;
+}
+
+.card-item-admin .prenom, .card-item-admin .numero, .card-item-admin .cagnotte, .card-item-admin .modif-btn, .card-item-admin .suppr-btn{
+    padding:1.2em;
+
+}
+.card-item-admin .personne{
+    display:flex;
+    flex-direction:row;
+    padding:0;
+}
+
+.card-item-admin .modif{
+    background-color: #45BF87;
+    color: white;
+    font-size: 0.8em;
+    padding: 1em 3em;
+    line-height: 2em;
+    border-radius: 2em;
+    box-shadow: 0px 0px 52px -7px rgba(0,0,0,0.25);
+}
+.card-item-admin .suppr{
+    background-color: #FF9595;
+    color:white;
+    font-size: 0.8em;
+    padding: 1em 3em;
+    line-height: 2em;
+}
+
+.card-item3 {
+    margin-left: 0;
+    width: 80%;
+
+    padding: 3em;
+    border-radius: 2em;
+    box-shadow: 0px 0px 52px -7px rgba(0,0,0,0.25);
+}
+
+#créditer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:5em;
+}
+footer .credit-btn{
+    display:flex;
+    justify-content:center;
+}
+footer .credit{
+    background-color: #fff;
+    color: #45BF87;
+    font-size: 0.8em;
+    padding: 1em 3em;
+    line-height: 2em;
+    border-radius: 2em;
+    box-shadow: 0px 0px 52px -7px rgba(0,0,0,0.25);
+}
+input[type=email] {
+    border: 1px dotted #999;
+    border-radius: 5;
+    -webkit-appearance: none;
+    width: 60%
+  }
