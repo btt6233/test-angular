@@ -1,0 +1,7 @@
+<div class="player">
+  <h1>{{data.lastName}}</h1>
+  <h2>{{data.firstName}}</h2>
+  <p *ngIf="data.num">Numéro : {{data.num}}</p>
+  <p>Etat du joueur : {{data.injured ? 'Blessé' : 'En forme'}}</p>
+  <button (click)="injure()">{{data.injured ? 'Heal him' : 'Send to hospital'}}</button>
+</div>

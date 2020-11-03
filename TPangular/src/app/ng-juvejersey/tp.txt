@@ -1,0 +1,22 @@
+*** TP juvejersey ***
+
+A partir des fichiers source fournis, créer une application
+Angular multi-composants permettant de
+
+** Composant A **
+- flocker le maillot (de dos, image 3)
+Le clic sur le bouton "Players" affiche un menu déroulant contenant une liste
+de noms de joueurs. La sélection d'un nom provoque son affichage sur le
+maillot ainsi que le numéro associé (Exemple: Buffon => 1).
+Les infos concernant les joueurs (nom, numéro) proviennet d'un service.
+
+** Composant B **
+- déterminer un total incluant le prix:
+    du maillot (prix unitaire: 120 EUR)
+    de la quantité choisie
+    du flocage (10EUR)
+    des badges choisis (10 EUR par badge)
+
+** Composant C **
+- d'afficher une image en grand format, à partir d'un clic sur une miniature
+

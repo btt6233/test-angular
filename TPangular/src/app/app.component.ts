@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FruitService} from './services/fruit.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -6,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'introAngular';
+  fruits: string[];
+
+  constructor(private fruitService: FruitService) {
+    this.fruits = this.fruitService.getFruits();
+  }
 }
+

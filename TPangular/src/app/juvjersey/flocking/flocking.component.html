@@ -1,0 +1,9 @@
+<section>
+  <h3>Flocking</h3>
+  <button value="noFlock" (click)="showPlayers($event)">No flock</button>
+  <button value="flock" (click)="showPlayers($event)">Players</button>
+  <select *ngIf="state">
+    <option>---Select a player---</option>
+    <option *ngFor="let player of players">{{player.num}} - {{player.firstName}}</option>
+  </select>
+</section>
