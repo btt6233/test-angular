@@ -11,6 +11,9 @@ import { PlayersComponent } from './players/players.component';
 import { PlayerComponent } from './player/player.component';
 import { PlayerFormComponent } from './player-form/player-form.component';
 import { JuvjerseyComponent } from './juvjersey/juvjersey.component';
+import { AjaxComponent } from './ajax/ajax.component';
+import { AjaxPostComponent } from './ajax-post/ajax-post.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,11 +26,16 @@ import { JuvjerseyComponent } from './juvjersey/juvjersey.component';
     PlayerComponent,
     PlayerFormComponent,
     FlockingComponent,
+    AjaxComponent,
+    AjaxPostComponent;
     JuvjerseyComponent
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    JuvjerseyModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

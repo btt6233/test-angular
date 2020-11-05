@@ -1,0 +1,9 @@
+<h2>List of players</h2>
+
+<p *ngFor="let player of players; let i=index">
+  <span>{{ i + 1 }} -> </span>
+  <span (click)="playerDetail($event, player.id)" class="title">{{ player.firstname }} {{ player.lastname }}, {{ player.age }},
+    {{ player.position }}</span>
+  <button>edit</button>
+  <button>delete</button>
+</p>

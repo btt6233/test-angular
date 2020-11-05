@@ -1,0 +1,26 @@
+<h2>Enregistrement d'un joueur</h2>
+<div>{{ message }}</div>
+
+<!-- Formulaire -->
+<div>
+  <!-- <input type="text" placeholder="Nom"
+      (keyup)="updatePlayerLastname($event)"
+      [value]="player.lastname"> -->
+  <input type="text" placeholder="Nom"
+         [(ngModel)]="player.lastname">
+
+  <input type="text" placeholder="Prénom"
+         [(ngModel)]="player.firstname">
+
+  <select [(ngModel)]="player.position">
+    <option>gardien</option>
+    <option>défenseur</option>
+    <option>milieu</option>
+    <option>attaquant</option>
+  </select>
+
+  <input type="number" placeholder="age"
+         [(ngModel)]="player.age" >
+
+  <button (click)="postPlayer()">Post Player</button>
+</div>
